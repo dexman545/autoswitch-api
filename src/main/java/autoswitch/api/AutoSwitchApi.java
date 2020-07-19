@@ -85,7 +85,7 @@ public interface AutoSwitchApi {
      * @param damageMap A map of {@link Class} -> {@link DurabilityGetter}. Value can be a method reference.
      *                  When an item is found to be an instance or implementation of the provided Class,
      *                  AutoSwitch will pass the ItemStack to the lambda to get the amount of durability remaining.
-     *                  This could be the percentage of energy remaining, or (preferably) the number of uses the
+     *                  This could be the (non-decimal form) percentage of energy remaining, or (preferably) the number of uses the
      *                  item has left before being depleted/broken.
      *
      */
