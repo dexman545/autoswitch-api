@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "autoswitch-api",
+  "version": "${version}",
+  "name": "AutoSwitch API",
+  "description": "API for AutoSwitch",
+  "authors": [
+    "Deximus-maximus"
+  ],
+  "contributors": [],
+  "contact": {},
+  "license": "LGPL-3.0",
+  "icon": "assets/autoswitch-api/icon.png",
+  "depends": {
+    "fabricloader": ">=0.4.0"
+  }
+}
