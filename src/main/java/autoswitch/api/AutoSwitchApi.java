@@ -76,7 +76,7 @@ public interface AutoSwitchApi {
      * Do note it only checks this map if the item returns false for {@link Item#isDamageable()}. The passed lambda
      * should return some {@link Number} (int, float, etc).</p><b></b>
      *
-     * <p>Example Usage: damageMap.put(Item.class, ItemStack::getDamage); This will check if the Item is instanceof Item
+     * <p>Example Usage: damageMap.put(Item.class, ItemStack::getDamage); This will check if the item is instanceof Item
      * and then call getDamage on the ItemStack, in this case it would match for all passed items.</p><b></b>
      *
      * <p>Contrary to how Item is setup where the durability remaining is {@code getMaxDamage - getDamage}, the
