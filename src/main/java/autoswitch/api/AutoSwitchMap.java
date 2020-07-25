@@ -31,6 +31,13 @@ public class AutoSwitchMap<K, V> extends ConcurrentHashMap<K, V> {
         return super.put(key, value);
     }
 
+    /**
+     * NOT YET IMPLEMENTED
+     *
+     * @param key
+     * @param value
+     */
+    @Deprecated
     public void putTarget(K key, V value) {
 
     }
