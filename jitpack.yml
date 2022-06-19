@@ -6,4 +6,5 @@ before_install:
   - sdk use java 17.0.3-ms
 
 install:
+  - chmod +x gradlew
   - ./gradlew publishToMavenLocal
