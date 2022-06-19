@@ -1,11 +1,8 @@
 package autoswitch.api;
 
-import net.minecraft.item.Item;
-import net.minecraft.predicate.item.ItemPredicate;
-import net.minecraft.tag.Tag;
-import org.apache.commons.lang3.tuple.Pair;
-
 import java.util.function.Predicate;
+
+import net.minecraft.item.Item;
 
 public interface AutoSwitchApi {
 
