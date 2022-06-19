@@ -6,6 +6,4 @@ before_install:
   - sdk use java 17.0.3-ms
 
 install:
-  - echo "Install"
-  - java -version
-  - gradle publishToMavenLocal
+  - ./gradlew publishToMavenLocal
