@@ -47,26 +47,6 @@ public interface AutoSwitchApi {
                                AutoSwitchMap<String, String> actionConfig,
                                AutoSwitchMap<String, String> usableConfig);
 
-
-    /**
-     * Tool groupings allow users to use simple keywords to specify a series of items that should match a config entry,
-     * eg. "pickaxe" will match any pickaxe item. By default, groupings exist for all of Fabric's ToolTags.
-     * Do note that Tags are synced from server -> client, and therefore if you wish for these groupings to work on
-     * vanilla servers without your datapack you will need to provide a class or interface that they all inherit from.
-     * See {@link autoswitch.config.ToolHandler#isCorrectTool(String, Item)} for details.
-     *
-     *
-     * @param toolGroupings Map of key -> tool tag and/or class, eg. "pickaxe ->
-     * {@link net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags#PICKAXES}". Class is nullable. YOU SHOULD PREFER
-     *                      USING {@link net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags} OVER CUSTOM GROUPS
-     *                      WHERE POSSIBLE!
-     *
-     * @deprecated may be removed or become unused in the future. Use
-     * {@link AutoSwitchApi#moddedToolGroupPredicates(AutoSwitchMap)} instead.
-     */
-    @Deprecated(since = "AS-API 1.1.0, MC 22w06a (1.18.2)", forRemoval = true)
-    void moddedToolGroups(AutoSwitchMap<String, Pair<Tag<Item>, Class<?>>> toolGroupings);
-
     /**
      * Tool groupings allow users to use simple keywords to specify a series of items that should match a config entry,
      * eg. "pickaxe" will match any pickaxe item. By default, groupings exist for all of Fabric's ToolTags.
