@@ -58,7 +58,7 @@ public interface AutoSwitchApi {
      *                      such as "c:pickaxes" OVER CUSTOM GROUPS
      *                      WHERE POSSIBLE!
      */
-    void moddedToolGroupPredicates(AutoSwitchMap<String, Predicate<Item>> toolPredicates);
+    void moddedToolGroupPredicates(AutoSwitchMap<String, Predicate<Object>> toolPredicates);
 
     /**
      * <p>Function for specifying custom damage systems for items, eg. powered tools a la Tech Reborn's drills.</p></b>
